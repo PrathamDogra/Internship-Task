@@ -1,0 +1,22 @@
+$main-color: #3a3361;
+
+.Top {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+}
+.Top .flex-1 p {
+  color: $main-color;
+  font-size: 2rem;
+  font-weight: 760;
+  padding-left: 5em;
+}
+#greyText{
+    font-size: 1em;
+    padding-left: 9.9em;
+    color:grey;
+}
+.Top .flex-2 {
+  padding-left: 100px;
+  justify-content: center;
+}
