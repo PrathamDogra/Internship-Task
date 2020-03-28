@@ -1,0 +1,78 @@
+.flex-container-3 {
+  display: flex;
+  flex-direction: row;
+  padding: 5em 5em 1em 5em;
+  justify-content: center;
+  text-align: center;
+  p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 760;
+  }
+}
+
+.card-1 {
+  flex: 1;
+  position: relative;
+
+  border-radius: 1em 1em 0 0;
+  height: 10rem;
+  width: auto;
+  margin: 1em;
+  background: white;
+  .header {
+    text-align: center;
+    padding-top: 0.75em;
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+.card-1:before,
+.card-1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  border-top: 20px solid white;
+
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.card-2 {
+  flex: 1;
+  position: relative;
+  top: 0%;
+  border-radius: 0 0 1em 1em;
+  height: 7rem;
+  width: auto;
+  margin: 1em;
+
+  background: white;
+  p {
+    text-align: center;
+    color: #52514e;
+    font-size: 0.75em;
+    font-weight: 500;
+  }
+  h3{  
+      text-align: center;
+      font-weight: 700;
+      font-size: 2em;
+      color: #3a3361;
+
+  }
+}
+.card-2:before,
+.card-2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  border-bottom: 20px solid white;
+
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
