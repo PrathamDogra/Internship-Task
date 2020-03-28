@@ -58,6 +58,9 @@ class Top extends Component {
             </div>
           </div>
         </div>
+        <div className="flex-container-3">
+          <p>What can you win?</p>
+        </div>
       </div>
     );
   }

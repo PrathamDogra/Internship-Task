@@ -25,7 +25,7 @@ $main-color: #3a3361;
   .box {
     position: absolute;
     transform: translate(-50%, -50%);
-    left: 26%;
+    left: 15%;
     padding-top: 1.5em;
     flex: 1;
     input {
@@ -111,4 +111,16 @@ $main-color: #3a3361;
 }
 .card-body {
   font-size: 0.75em;
+}
+.flex-container-3 {
+  display: flex;
+  flex-direction: row;
+  padding: 5em 5em 1em 5em;
+  justify-content: center;
+  text-align: center;
+  p {
+    color:white;
+    font-size: 2rem;
+    font-weight: 760;
+  }
 }
