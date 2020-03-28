@@ -3,7 +3,7 @@ $main-color: #3a3361;
   justify-content: flex-start;
   align-self: center;
   // padding: 1em 5em 1em 5em;
-  height: 700px;
+  height: 48rem;
 }
 .flex-container-1 {
   display: flex;
@@ -25,8 +25,8 @@ $main-color: #3a3361;
   .box {
     position: absolute;
     transform: translate(-50%, -50%);
-    left: 15%;
-    padding-top: 1.5em;
+    left: 17em;
+    padding-top: 3em;
     flex: 1;
     input {
       position: relative;
@@ -37,8 +37,8 @@ $main-color: #3a3361;
     }
     input[type="email"] {
       background: #ffffff;
-      width: 250px;
-      height: 40px;
+      width: 20em;
+      height: 3em;
       outline: none;
       position: relative;
       border: 1px solid grey;
@@ -47,7 +47,8 @@ $main-color: #3a3361;
     }
     input[type="submit"] {
       border-radius: 0px 7px 7px 0px;
-      height: 40px;
+      border: 2px solid #3a3361;
+      height: 3em;
       outline: none;
       background-color: $main-color;
       color: white;
