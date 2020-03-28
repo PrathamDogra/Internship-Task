@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Top.scss";
 import Fade from "react-reveal/Fade";
+import SVG from "../../assets/intro-img.svg";
 class Top extends Component {
   render() {
     return (
@@ -27,8 +28,11 @@ class Top extends Component {
               </form>
             </div>
           </div>
-
-          <div className="flex-2"></div>
+          <Fade right>
+            <div className="flex-2">
+              <img src={SVG} alt="" class="img-fluid" />
+            </div>
+          </Fade>
         </div>
       </div>
     );
