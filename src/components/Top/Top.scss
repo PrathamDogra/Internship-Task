@@ -1,42 +1,114 @@
 $main-color: #3a3361;
-
 .Top {
-  display: flex;
   justify-content: flex-start;
   align-self: center;
-  padding: 1em 0 1em 7em;
+  // padding: 1em 5em 1em 5em;
+  height: 700px;
 }
-.flex-1 p {
-  color: $main-color;
-  font-size: 2rem;
-  font-weight: 760;
+.flex-container-1 {
+  display: flex;
+  flex-direction: row;
+  padding: 1em 5em 1em 5em;
 }
-#greyText {
-  font-size: 1em;
+.flex-1 {
+  flex: 1;
+  justify-content: center;
+  p {
+    color: $main-color;
+    font-size: 2rem;
+    font-weight: 760;
+  }
+  #greyText {
+    font-size: 1em;
+    color: grey;
+  }
+  .box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 26%;
+    padding-top: 1.5em;
+    flex: 1;
+    input {
+      position: relative;
+      display: inline-block;
+      font-size: 1em;
+      box-sizing: border-box;
+      transition: 0.5s;
+    }
+    input[type="email"] {
+      background: #ffffff;
+      width: 250px;
+      height: 40px;
+      outline: none;
+      position: relative;
+      border: 1px solid grey;
+      border-radius: 7px 0 0 7px;
+      padding-left: 1em;
+    }
+    input[type="submit"] {
+      border-radius: 0px 7px 7px 0px;
+      height: 40px;
+      outline: none;
+      background-color: $main-color;
+      color: white;
+      border: 1px solid $main-color;
+    }
+  }
+}
 
-  color: grey;
+.flex-2 {
+  flex: 1;
+  justify-content: center;
 }
-// .box {
+.flex-container-2 {
+  display: flex;
+  flex-direction: row;
+  padding: 12em 5em 1em 5em;
+  justify-content: center;
+  text-align: center;
+  p {
+    color: $main-color;
+    font-size: 2rem;
+    font-weight: 760;
+  }
+}
+.container {
+  display: flex;
+  padding: 0;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  height: 100vh;
+}
+// .card {
+//   display: grid;
+//   grid-template-columns: 300px;
+//   grid-template-rows: 210px 210px 80px;
+//   grid-template-areas: "header" "text";
+//   border-radius: 18px;
+//   background: #ffffff;
+//   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 // }
-input {
-  position: relative;
-  display: inline-block;
-  font-size: 1em;
-  box-sizing: border-box;
-  transition: 0.5s;
-}
-input[type="email"] {
-  position: relative;
-  border: 1px solid grey;
-  border-radius: 7px 0 0 7px;
-  
-}
+// .card-header{
+//   grid-area: header;
 
-input[type="submit"] {
-  
-  border-radius: 0px 7px 7px 0px;
-  
-  background-color: $main-color;
-  color: white;
-  border:1px solid $main-color;
+// }
+// .card-text{
+//   grid-area: text;
+// }
+.card {
+  flex: 1;
+  border-radius: 10px;
+  height: 18rem;
+  width: 5rem;
+  margin:1em;
+}
+.card-header {
+  text-align: center;
+  font-size: 1em;
+}
+.card-body {
+  font-size: 0.75em;
 }
